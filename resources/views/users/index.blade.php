@@ -9,6 +9,7 @@
 </head>
 <body>
      <strong>Users List</strong>
+     <a href="{{route('users.create')}}" class="btn btn-primary">Create user</a>
     <table class="table-table-striped">
         <thead>
             <td>Id</td>
