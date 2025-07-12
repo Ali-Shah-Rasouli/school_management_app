@@ -32,7 +32,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $request -> validate(['name'=> 'required|min:3|max:32', 'email'=>'email|required', 'password'=>'required|min:6']);
-        User::create(['name'=>$request->name, 'email'=>$request->email,'password'=>Hash::make($request->password) ]);
+        User::create(['name'=>$request->name, 'email'=>$request->email,'password'=>hash()::make($request->password) ]);
         return redirect()->route('users.index')->with('success', ' user added successfully !');
     }
 
