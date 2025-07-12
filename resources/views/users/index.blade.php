@@ -10,7 +10,7 @@
                 </div>
 
                 <div class="card-body">
-                    <a href="{{route('users.create')}}" class="btn btn-primary mt-1 mb-3">Add User</a>
+                    <a href="{{route('users.create')}}" class="btn btn-primary mt-2 mb-3">Add User</a>
                   <table class="table table-striped">
                     <thead class="table-dark">
                         <tr class="">
@@ -27,6 +27,8 @@
                             <td>{{$user->name}}</td>
                             <td>{{$user->email}}</td>
                             <td> <a href="" class="button bg-primay">Show User</a></td>
+                            <td> <a href="" class="button bg-primay">Edit User</a></td>
+                            <td> <a href="" class="button bg-primay">Delete User</a></td>
                          </tr>
                      @endforeach
                     </tbody>
