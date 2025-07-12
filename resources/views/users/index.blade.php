@@ -17,7 +17,7 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th width ="300px" class="text-center">Action</th>
+                            <th width ="280px" class="text-center justify-items-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -26,7 +26,7 @@
                             <td>{{$user->id}}</td>
                             <td>{{$user->name}}</td>
                             <td>{{$user->email}}</td>
-                            <td class="">    <a href="" class="btn btn-success  text-white btn-sm">Show User</a>
+                            <td>    <a href="{{ route('users.show', $user->id) }}" class="btn btn-sm btn-info">Show User</a>
                                     <a href="" class="btn btn-primary btn-sm text-white">Edit User</a>
                                     <a href="" class="btn btn-danger btn-sm text-white">Delete User</a>
                             </td>
