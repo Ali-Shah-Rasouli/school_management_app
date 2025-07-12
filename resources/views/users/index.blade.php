@@ -17,7 +17,7 @@
                             <th>ID</th>
                             <th>Name</th>
                             <th>Email</th>
-                            <th>Action</th>
+                            <th width ="300px" class="text-center">Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -26,9 +26,10 @@
                             <td>{{$user->id}}</td>
                             <td>{{$user->name}}</td>
                             <td>{{$user->email}}</td>
-                            <td> <a href="" class="button bg-primay">Show User</a></td>
-                            <td> <a href="" class="button bg-primay">Edit User</a></td>
-                            <td> <a href="" class="button bg-primay">Delete User</a></td>
+                            <td class="">    <a href="" class="btn btn-success  text-white btn-sm">Show User</a>
+                                    <a href="" class="btn btn-primary btn-sm text-white">Edit User</a>
+                                    <a href="" class="btn btn-danger btn-sm text-white">Delete User</a>
+                            </td>
                          </tr>
                      @endforeach
                     </tbody>
