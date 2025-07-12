@@ -3,14 +3,22 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
-
-
 Route::get('/', function () {
-    return view('index');
+    return view('welcome');
 });
 
+ 
 Auth::routes();
+// Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::resource('users', UserController::class);
 
-Route::resource('users', UserController::class);
+
+//...................................................
+
+Route::get('home', [UserController::class, 'index'])->name('home');
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
+Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
+Route::post('/users', [UserController::class, 'store'])->name('users.store');
+
+ 
