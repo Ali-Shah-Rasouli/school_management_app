@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('class_grades', function (Blueprint $table) {
             $table->id();
+            $table->string('c_category_id');
+            $table->string('name');
             $table->timestamps();
         });
     }

@@ -7,4 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 class ClassCategory extends Model
 {
     //
+    protected $fillable=['nmae'];
 }
