@@ -11,7 +11,7 @@
 
                 <div class="card-body">
                     <a href="{{route('users.create')}}" class="btn btn-primary mt-2 mb-3">Add User</a>
-                    <a href="{{route('admin.classcategory.create')}}" class="btn btn-info mt-2 mb-3">Add Class category</a>
+                    <a href="{{route('dashboard')}}" class="btn btn-secondary mt-2 mb-3">Back To Dashboard</a>
                   <table class="table table-striped">
                     <thead class="table-dark">
                         <tr class="">

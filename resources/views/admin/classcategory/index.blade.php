@@ -6,11 +6,12 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title text-center text-primary"> <strong>Class Category</strong></h3></div>
+                    <h3 class="card-title text-center text-primary"> <strong> CLASS CATEGORY MANAGEMENT SECTION</strong></h3></div>
                 </div>
 
                 <div class="card-body">
                     <a href="{{route('admin.classcategory.create')}}" class="btn btn-primary mt-2 mb-3">Add Class Category</a>
+                    <a href="{{route('dashboard')}}" class="btn btn-primary mt-2 mb-3">Back To Dashboard</a>
                   <table class="table table-striped">
                     <thead class="table-dark">
                         <tr class="">
@@ -21,12 +22,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                     @foreach ($classcategories as $classcat )
+                     @foreach ($classcategories as $classcategory )
                          <tr>
-                            <td>{{$classcat->id}}</td>
-                            <td>{{$classcat->name}}</td>
-                            <td>{{$classcat->email}}</td>
-                            <td>    <a href="{{ route('users.show', $classcat->id) }}" class="btn btn-sm btn-info">Show User</a>
+                            <td>{{$classcategory->id}}</td>
+                            <td>{{$classcategory->name}}</td>
+                            <td>{{$classcategory->email}}</td>
+                            <td>    <a href="{{ route('users.show', $classcategory->id) }}" class="btn btn-sm btn-info">Show User</a>
                                     <a href="" class="btn btn-primary btn-sm text-white">Edit User</a>
                                     <a href="" class="btn btn-danger btn-sm text-white">Delete User</a>
                             </td>
@@ -40,7 +41,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{-- {{ __('You are logged in!') }} --}}
                 </div>
             </div>
         </div>
