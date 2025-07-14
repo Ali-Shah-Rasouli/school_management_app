@@ -17,13 +17,15 @@ class ClassCategoryController extends Controller
       return view('admin.classcategory.index', compact('classcategories'));
     }
 
+
+    
     /**
      * Show the form for creating a new resource.
      */
     public function create()
     {
          $classcategories= ClassCategory::all();
-       return view('admin.classcategory.create', compact('classcategories'));
+       return view('admin.classcategory.create', compact('classcategories.create'));
     }
 
     /**

@@ -21,12 +21,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                     @foreach ($users as $user )
+                     @foreach ($classcategories as $classcat )
                          <tr>
-                            <td>{{$user->id}}</td>
-                            <td>{{$user->name}}</td>
-                            <td>{{$user->email}}</td>
-                            <td>    <a href="{{ route('users.show', $user->id) }}" class="btn btn-sm btn-info">Show User</a>
+                            <td>{{$classcat->id}}</td>
+                            <td>{{$classcat->name}}</td>
+                            <td>{{$classcat->email}}</td>
+                            <td>    <a href="{{ route('users.show', $classcat->id) }}" class="btn btn-sm btn-info">Show User</a>
                                     <a href="" class="btn btn-primary btn-sm text-white">Edit User</a>
                                     <a href="" class="btn btn-danger btn-sm text-white">Delete User</a>
                             </td>

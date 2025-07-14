@@ -16,7 +16,7 @@
                         <a href="{{route('users.index')}}" class="btn btn-primary col-2 m-2">Manage Users</a>
                         <button class="btn btn-primary col-2 m-2">Manage Teachers</button>
                         <button class="btn btn-primary col-2 m-2">Manage Students</button>
-                        <button class="btn btn-primary col-2 m-2">Manage Yourself</button>
+                        <a href="{{route('admin.classcategory.index')}}" class="btn btn-secondary col-2 m-2">Manage Classes</a>
 
 
                     </div>
