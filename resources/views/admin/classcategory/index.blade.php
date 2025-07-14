@@ -1,17 +1,16 @@
 @extends('layouts.app')
-
+@section('title', 'Class Category')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title text-center text-primary"> <strong>User Management Section </strong></h3></div>
+                    <h3 class="card-title text-center text-primary"> <strong>Class Category</strong></h3></div>
                 </div>
 
                 <div class="card-body">
-                    <a href="{{route('users.create')}}" class="btn btn-primary mt-2 mb-3">Add User</a>
-                    <a href="{{route('admin.classcategory.create')}}" class="btn btn-info mt-2 mb-3">Add Class category</a>
+                    <a href="{{route('admin.classcategory.create')}}" class="btn btn-primary mt-2 mb-3">Add Class Category</a>
                   <table class="table table-striped">
                     <thead class="table-dark">
                         <tr class="">

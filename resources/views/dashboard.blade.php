@@ -6,7 +6,7 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <h1 class="text-3xl font-bold text-gray-800">Dashboard</h1>
+                    <h1 class="text-3xl font-bold text-gray-800">Dashboard of The System</h1>
                         <p class="text-gray-800 text-center">Welcome back, {{ auth()->user()->name }}!</p>
                 </div>
 

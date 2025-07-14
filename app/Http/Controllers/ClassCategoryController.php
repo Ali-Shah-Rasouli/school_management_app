@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\ClassCategory;
 
 class ClassCategoryController extends Controller
 {
@@ -12,6 +13,8 @@ class ClassCategoryController extends Controller
     public function index()
     {
         //
+        $classcategories= ClassCategory::all();
+      return view('admin.classcategory.index', compact('classcategories'));
     }
 
     /**
@@ -19,7 +22,8 @@ class ClassCategoryController extends Controller
      */
     public function create()
     {
-        //
+         $classcategories= ClassCategory::all();
+       return view('admin.classcategory.create', compact('classcategories'));
     }
 
     /**
