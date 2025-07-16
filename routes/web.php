@@ -28,6 +28,7 @@ Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
 
 Route::get('/admin/classcategory}', [ClassCategoryController::class, 'index'])->name('admin.classcategory.index');
 Route::get('/admin/classcategory/create}', [ClassCategoryController::class, 'create'])->name('admin.classcategory.create');
+Route::get('/admin/classcategory/store}', [ClassCategoryController::class, 'store'])->name('admin.classcategory.store');
 
 
  

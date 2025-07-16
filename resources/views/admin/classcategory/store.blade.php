@@ -1,12 +1,12 @@
 @extends('layouts.app')
-@section('title', ' Class Category')
+
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <h3 class="card-title "> <strong>Create a class Category</strong></h3></div>
+                    <h3 class="card-title "> <strong>Create a new Class Category</strong></h3></div>
                 </div>
 
                 <div class="card-body">
@@ -15,6 +15,7 @@
                         @csrf
                         <label for="name">Class Category</label>
                         <input type="text" name="ccategory" placeholder="Enter class category" class="form-control m-2">
+
                         <button class="btn btn-success"> Add Class Category </button>
 
                     </form>
@@ -26,7 +27,7 @@
                         </div>
                     @endif
 
-                    {{-- {{ __('You are logged in!') }} --}}
+                    {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>

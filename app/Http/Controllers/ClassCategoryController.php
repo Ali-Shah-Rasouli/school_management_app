@@ -25,7 +25,7 @@ class ClassCategoryController extends Controller
     public function create()
     {
          $classcategories= ClassCategory::all();
-       return view('admin.classcategory.create', compact('classcategories.create'));
+       return view('admin.classcategory.create', compact('classcategories'));
     }
 
     /**

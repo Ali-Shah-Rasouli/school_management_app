@@ -11,7 +11,7 @@
                 </div>
 
                 <div class="card-body">
-                    <div class="row mt-3 mb-5">
+                    <div class="row mt-3 mb-5 ">
 
                         <a href="{{route('users.index')}}" class="btn btn-primary col-2 m-2">Manage Users</a>
                         <a class="btn btn-success col-2 m-2">Manage Teachers</a>
@@ -22,8 +22,7 @@
                     </div>
                     
 
-              
-
+                    
 
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">

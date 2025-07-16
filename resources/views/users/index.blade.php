@@ -40,8 +40,8 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
-                    {{ __('You are logged in!') }}
+                            <p>you are loged in as {{ auth()->user()->name }}!</p>
+                    {{-- {{ __('You are logged in!') }} --}}
                 </div>
             </div>
         </div>
